@@ -62,18 +62,14 @@ public:
 
     bool isFound(int key)
     {
-        bool found = false;
         Node *temp = head;
         while (temp != NULL)
         {
             if (temp->value == key)
-            {
-                found = true;
-                return found;
-            }
+                return true;
             temp = temp->nextNode;
         }
-        return found;
+        return false;
     }
 
     void insertBefore(int item, int data)
