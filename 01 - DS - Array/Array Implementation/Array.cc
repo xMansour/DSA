@@ -56,19 +56,14 @@ public:
 
     int search(int key)
     {
-        int index = -1;
         for (int i = 0; i < length; i++)
-        {
             if (arrPtr[i] == key)
-            {
-                index = i;
-                break;
-            }
-        }
-        return index;
+                return i;
+        return -1;
     }
 
-    void append(int element)
+    void
+    append(int element)
 
     {
         if (length >= customArraySize)
