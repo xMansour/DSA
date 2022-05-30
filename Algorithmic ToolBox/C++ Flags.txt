@@ -1,0 +1,1 @@
+g++ -pipe -output -std=c++11
